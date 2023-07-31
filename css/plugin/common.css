@@ -1,0 +1,294 @@
+
+html, body {
+    /*margin: 0;*/
+    /*height: 100%;*/
+    /*-webkit-overflow-scrolling: touch;*/
+    /*overflow-scrolling: touch;*/
+    /*overflow: hidden;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font-size: 16px;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+
+
+.scroll-content > section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.scroll-content > section:nth-child(even){
+    background: red;
+}
+
+.startPoint {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.posNum {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 50px;
+    margin: -25px 0 0 -150px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+}
+
+
+#navi {
+    background-size: 100% 100%;
+}
+
+
+#navi .btn_menu {
+    position: fixed;
+    left: 88px;
+    top: 104px;
+    width: 40px;
+    height: 22px;
+    z-index: 20;
+}
+
+#navi .btn_music {
+    position: fixed;
+    right: 105px;
+    top: 84px;
+    width: 37px;
+    height: 30px;
+    z-index: 20;
+    transform: scale(0.9);
+}
+
+
+#navi .btn_music .bar01{
+    background-color: white;
+    width: 3px;
+    height: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom;
+
+}
+
+
+#navi .btn_music .bar01.on1000{
+    animation: bar01 1.2s linear infinite;
+}
+
+@keyframes bar01 {
+    0%{
+        height: 14px;
+    }
+
+    40%{
+        height: 24px;
+    }
+
+    100%{
+        height: 14px;
+    }
+
+}
+
+
+#navi .btn_music .bar02{
+    background-color: white;
+    width: 3px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 11px;
+    animation: bar02 1.4s linear infinite;
+    transform-origin: bottom;
+}
+
+@keyframes bar02 {
+    0%{
+        height: 30px;
+    }
+
+    70%{
+        height: 20px;
+    }
+
+    100%{
+        height: 30px;
+    }
+
+}
+
+
+#navi .btn_music .bar03{
+    background-color: white;
+    width: 3px;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    animation: bar03 1.5s linear infinite;
+    transform-origin: bottom;
+}
+
+@keyframes bar03 {
+    0%{
+        height: 18px;
+    }
+
+    50%{
+        height: 32px;
+    }
+
+    100%{
+        height: 18px;
+    }
+
+}
+
+
+#navi .btn_music .bar04{
+    background-color: white;
+    width: 3px;
+    height: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 34px;
+    animation: bar04 1.4s linear infinite;
+    transform-origin: bottom;
+}
+
+@keyframes bar04 {
+    0%{
+        height: 23px;
+    }
+
+    30%{
+        height: 30px;
+    }
+
+    70%{
+        height: 10px;
+    }
+
+    100%{
+        height: 23px;
+    }
+
+}
+
+
+
+
+
+
+#navi .btn_sns {
+    position: fixed;
+    left: 104px;
+    bottom: 84px;
+    width: 161px;
+    height: 32px;
+    z-index: 20;
+    transform: scale(0.8);
+}
+
+#navi .font_2019 {
+    position: fixed;
+    right: 100px;
+    bottom: 82px;
+    width: 175px;
+    height: 39px;
+    z-index: 20;
+}
+
+#navi .navi_exp_left{
+    position: fixed;
+    left: 99px;
+    top: 50%;
+    transform: translateY(-40%);
+    width: 15px;
+    height: 284px;
+    z-index: 20;
+}
+
+#navi .navi_page_right{
+    position: fixed;
+    right: 105px;
+    top: 50%;
+    transform: translateY(-40%);
+    width: 22px;
+    height: 284px;
+    z-index: 20;
+}
+
+#navi .navi_page_right .navi_f_page_01{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 32px;
+}
+
+#navi .navi_page_right .page_bar{
+    width: 3px;
+    height: 190px;
+    background-color: #766a5b;
+    opacity: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 35px;
+}
+
+
+
+#navi .navi_page_right .pagebar_now{
+    position: absolute;
+    width: 3px;
+    height: 38px;
+    background-color: #ffffff;
+    opacity: 100%;
+    left: 0;
+    transition: all 1s;
+    top: 0;
+}
+
+
+/*#navi.on6 .navi_page_right .pagebar_now{
+    transform: translateY(72px);
+}*/
+
+#navi .navi_page_right .navi_f_page_05{
+    top: 268px;
+    left: 50%;
+    transform: translateX(-50%);
+}

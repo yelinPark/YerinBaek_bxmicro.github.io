@@ -1,0 +1,396 @@
+/*menu 시작*/
+#menu .s1_line .line101{
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke-dashoffset: -1059;
+    stroke-dasharray: 1059;
+    animation: line101 5s linear infinite ;
+}
+
+
+
+@keyframes line101 {
+    0%{
+        stroke-dashoffset: -1059;
+    }
+    50%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 1059;
+    }}
+
+
+
+#menu .s1_line .line102{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    stroke-dashoffset: -1046;
+    stroke-dasharray: 1046;
+    animation: line102 5s linear infinite ;
+}
+
+@keyframes line102 {
+    0%{
+        stroke-dashoffset: 1046;
+    }
+    50%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -1046;
+    }}
+
+
+#menu{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: #4b3e3b;
+}
+
+
+#menu.on{
+    display: block;
+}
+
+#menu .s1_line .line103{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    stroke-dashoffset: -972;
+    stroke-dasharray: 972;
+    animation: line103 5s cubic-bezier(0.7, 0.29, 1, 1) infinite ;
+}
+
+@keyframes line103 {
+    0%{
+        stroke-dashoffset: 972;
+    }
+    50%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -972;
+    }}
+
+
+
+
+#menu .menu_btn_x{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 100px;
+    left: 88px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+#menu .menu_left {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background-color: yellow;*/
+}
+
+#menu .menu_f {
+    width: 326px;
+    height: 722px;
+    /*background-color: white;*/
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    /*transform: translate(-50%, -50%);*/
+    transform: translateY(-48%);
+}
+
+#menu .menu_f_title{
+    width: 327px;
+    height: 132px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+#menu .menu_f .menu_f_mid {
+    height: 304px;
+    width: 100px;
+    position: absolute;
+    /*background-color: orange;*/
+    left: 0;
+    top: 50%;
+    transform: translateY(-46%);
+}
+
+#menu .menu_f .menu_f_mid .menu_f_home {
+    height: 29px;
+    width: 93px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    opacity: 1;
+    transition: all 1s;
+}
+
+#menu .menu_f .menu_f_mid .menu_f_home:hover
+{
+    opacity: 0;
+}
+
+
+#menu .menu_f .menu_f_mid .menu_f_about {
+    height: 29px;
+    width: 98px;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    padding: 10px;
+}
+
+#menu .menu_f .menu_f_mid .menu_f_photo {
+    height: 20px;
+    width: 90px;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    padding: 10px;
+}
+
+#menu .menu_f .menu_f_mid .menu_f_video {
+    height: 20px;
+    width: 94px;
+    position: absolute;
+    left: 0;
+    top: 255px;
+    padding: 10px;
+}
+
+
+
+#menu .menu_f .menu_f_bottom .menu_f_ticket {
+    position: absolute;
+    width: 93px;
+    height: 16px;
+    left: 0;
+    bottom: 81px;
+    padding: 10px;
+    opacity: 1;
+}
+
+
+#menu .menu_f .menu_f_bottom .menu_f_ticket:hover
+{
+    opacity: 0;
+}
+
+/*#section01 .menu_f .menu_f_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}*/
+
+
+#menu .menu_f .menu_f_mid .menu_fd_home {
+    height: 31px;
+    width: 301px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#menu .menu_f .menu_f_mid .menu_fd_home:hover
+{
+    opacity: 1;
+}
+
+
+
+
+
+
+#menu .menu_f .menu_f_mid .menu_fd_about {
+    height: 33px;
+    width: 368px;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#menu .menu_f .menu_f_mid .menu_fd_about:hover
+{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+#menu .menu_f .menu_f_mid .menu_fd_photo {
+    height: 33px;
+    width: 386px;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#menu .menu_f .menu_f_mid .menu_fd_photo:hover
+{
+    opacity: 1;
+}
+
+
+
+
+
+#menu .menu_f .menu_f_mid .menu_fd_video {
+    height: 32px;
+    width: 402px;
+    position: absolute;
+    left: 0;
+    top: 255px;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#menu .menu_f .menu_f_mid .menu_fd_video:hover
+{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+#menu .menu_f .menu_f_bottom .menu_fd_ticket {
+    position: absolute;
+    width: 93px;
+    height: 16px;
+    left: 0;
+    bottom: 81px;
+    padding: 10px;
+    opacity: 0;
+}
+
+
+#menu .menu_f .menu_f_bottom .menu_fd_ticket:hover
+{
+    opacity: 1;
+}
+
+
+
+
+
+#menu .menu_f .menu_f_bottom .menu_f_others {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 139px;
+    height: 61px;
+}
+
+/*#menu .menu_f .menu_f_others {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 139px;
+    height: 61px;
+}*/
+
+
+#menu .menu_img {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+#menu .menu_img .menu_img_home {
+    /*width: 50vw;*/
+    /*height: 100vh;*/
+    width: 960px;
+    height: 1080px;
+    opacity: 1;
+    transition: all 1s;
+    position: absolute;
+}
+
+#menu .menu_img .menu_img_home {
+    /*width: 50vw;*/
+    /*height: 100vh;*/
+    width: 960px;
+    height: 1080px;
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+}
+#menu .menu_img .menu_img_about {
+    /*width: 50vw;*/
+    /*height: 100vh;*/
+    width: 960px;
+    height: 1080px;
+    opacity: 1;
+    transition: all 1s;
+    position: absolute;
+}
+
+#menu .menu_img .menu_img_photo {
+    /*width: 50vw;*/
+    /*height: 100vh;*/
+    width: 960px;
+    height: 1080px;
+    opacity: 1;
+    transition: all 1s;
+    position: absolute;
+}
+
+#menu .menu_img .menu_img_video {
+    /*width: 50vw;*/
+    /*height: 100vh;*/
+    width: 960px;
+    height: 1080px;
+    opacity: 1;
+    transition: all 1s;
+    position: absolute;
+}
+
+#menu .menu_img .menu_img_ticket {
+    /*width: 50vw;*/
+    /*height: 100vh;*/
+    width: 960px;
+    height: 1080px;
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+}
+/*menu 끝*/

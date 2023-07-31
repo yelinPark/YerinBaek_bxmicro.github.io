@@ -1,0 +1,889 @@
+
+
+
+#section01 {
+/*    background: #2d2f31;*/
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+#section01 .bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section01 .bg_01{
+    background-color: #2d2f31;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section01 .bg_02{
+    background-color: #3c2929;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section01 .bg_03{
+    background-color: #1e2629;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section01 .bg_04{
+    background-color: #b0aba4;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+#section01 .bg_line .line01 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    stroke-dashoffset: -1254;
+    stroke-dasharray: 1254;
+    animation: line01 5s linear infinite;
+    z-index: 100;
+}
+
+@keyframes line01 {
+    0% {
+        stroke-dashoffset: 1254;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -1254;
+    }
+}
+
+
+#section01 .bg_line .line02 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    stroke-dashoffset: -1834;
+    stroke-dasharray: 1834;
+    animation: line02 5s linear infinite;
+    z-index: 100;
+}
+
+@keyframes line02 {
+    0% {
+        stroke-dashoffset: 1834;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -1834;
+    }
+}
+
+
+#section01 .bg_line .line03 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    stroke-dashoffset: -1241;
+    stroke-dasharray: 1241;
+    animation: line03 5s linear infinite;
+    z-index: 100;
+
+}
+
+@keyframes line03 {
+    0% {
+        stroke-dashoffset: -1241;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 1241;
+    }
+}
+
+
+
+
+
+
+#section01 .ph_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/*좌측 움직임 조절*/
+.ph_img_left .move01.on01{
+    transform: translateX(100px);
+    transition: all 1s;
+    opacity: 1;
+}
+
+
+.ph_img_left .move02.on02{
+    transform: translateX(100px);
+    transition: all 1s;
+    opacity: 1;
+}
+
+.ph_img_left .move03.on03{
+    transform: translateX(100px);
+    transition: all 1s;
+    opacity: 1;
+}
+
+.ph_img_left .move04.on04{
+    transform: translateX(100px);
+    transition: all 1s;
+    opacity: 1;
+}
+
+
+/*천천히 fadein, fadeout*/
+/*
+.ph_img_left .move01.on101{
+    transition: all 1s;
+    opacity: 0;
+}
+
+
+.ph_img_left .move02.on102{
+    transition: all 1s;
+    opacity: 0;
+}
+
+.ph_img_left .move03.on103{
+    transition: all 1s;
+    opacity: 0;
+}
+
+.ph_img_left .move04.on104{
+    transition: all 1s;
+    opacity: 0;
+}
+*/
+
+
+/*가운데 움직임 조절*/
+.ph_img_mid .move05.on05{
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+
+.ph_img_mid .move06.on06{
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.ph_img_mid .move07.on07{
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.ph_img_mid .move08.on08{
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+
+/*우측 움직임 조절*/
+.ph_img_right .move09.on09{
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+
+.ph_img_right .move10.on10{
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+.ph_img_right .move11.on11{
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+.ph_img_right .move12.on12{
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+/*#slide .list.on{
+    transform: scale(1);
+}*/
+
+
+
+
+/*좌측 배치*/
+/*
+#section01 .ph_img .ph_img_left {
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    top: 140px;
+    left: 274px;
+}
+*/
+
+
+#section01 .ph_img .ph_img_left{
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 274px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+
+
+
+#section01 .ph_img .ph_img_left .ph_img01_1_berlin02{
+    width: 500px;
+    height: 800px;
+    position: relative;
+    /*background-color: white;*/
+}
+
+#section01 .ph_img .ph_img_left .ph_img01_1_berlin02_con{
+    width: 314px;
+    height: 392px;
+    position: absolute;
+    top: 234px;
+    left: 0;
+    /*transition: all 1s;*/
+    /*animation: op1 0.8s ease-in-out forwards;*/
+}
+
+@keyframes op1 {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+
+
+
+
+
+
+#section01 .ph_img .ph_img_left .photo_img02_1_inthestudio{
+    width: 500px;
+    height: 800px;
+    position: relative;
+    /*background-color: gray;*/
+}
+
+#section01 .ph_img .ph_img_left .photo_img02_1_inthestudio_con{
+    width: 495px;
+    height: 356px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+
+
+
+
+
+
+
+#section01 .ph_img .ph_img_left .photo_img03_1_inthestudio{
+    width: 500px;
+    height: 800px;
+    position: relative;
+    opacity: 0;
+    /*background-color: gray;*/
+}
+
+#section01 .ph_img .ph_img_left .photo_img03_1_berlin01_con{
+    width: 479px;
+    height: 351px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+#section01 .ph_img .ph_img_left .photo_img04_1_album{
+    width: 500px;
+    height: 800px;
+    position: relative;
+    opacity: 0;
+    /*background-color: palegoldenrod;*/
+}
+
+
+#section01 .ph_img .ph_img_left .photo_img04_1_album_con {
+    width: 380px;
+    height: 420px;
+    position: absolute;
+    top: 224px;
+    left: 0;
+}
+
+
+
+
+
+
+/*가운데 배치*/
+#section01 .ph_img .ph_img_mid {
+    width: 1000px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: palevioletred;*/
+    z-index: 1000;
+
+}
+
+
+
+#section01 .ph_img .ph_img01_3_berlin02{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    /*background-color: palegoldenrod;*/
+}
+
+#section01 .ph_img .ph_img01_3_berlin02_con {
+    width: 670px;
+    height: 521px;
+    position: absolute;
+    top: 105px;
+    left: 150px;
+    /*animation: op2 0.8s ease-in-out forwards;*/
+}
+
+@keyframes op2 {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+
+
+
+
+
+
+
+#section01 .ph_img .photo_img02_3_inthestudio{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    /*background-color: palegoldenrod;*/
+}
+
+#section01 .ph_img .photo_img02_3_inthestudio_con{
+    width: 395px;
+    height: 570px;
+    position: absolute;
+    top: 80px;
+    left: 290px;
+}
+
+
+
+
+#section01 .ph_img .photo_img03_2_berlin01{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    /*background-color: palegoldenrod;*/
+}
+#section01 .ph_img  .photo_img03_2_berlin01_con {
+    width: 433px;
+    height: 581px;
+    position: absolute;
+    left: 303px;
+    top: 45px;
+}
+
+
+
+
+#section01 .ph_img .photo_img04_3_album{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    /*background-color: palegoldenrod;*/
+}
+
+#section01 .ph_img .photo_img04_3_album_con {
+    width: 631px;
+    height: 498px;
+    position: absolute;
+    left: 198px;
+    top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/*우측 배치*/
+#section01 .ph_img .ph_img_right{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    right: 258px;
+    /*background-color: yellow;*/
+    transform: translateY(-50%);
+    z-index: 1000;
+
+}
+
+
+
+
+
+
+
+
+#section01 .ph_img .ph_img01_2_berlin02  {
+    width: 500px;
+    height: 800px;
+    position: relative;
+}
+
+#section01 .ph_img .ph_img01_2_berlin02_con  {
+    width: 376px;
+    height: 447px;
+    position: absolute;
+    right: 0;
+    top: 190px;
+    animation: op3 0.8s ease-in-out forwards;
+}
+
+@keyframes op3 {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        /*transform: translateX(-100px);*/
+    }
+}
+
+
+
+
+#section01 .ph_img .photo_img02_2_inthestudio{
+    width: 500px;
+    height: 800px;
+    position: relative;
+}
+
+#section01 .ph_img .photo_img02_2_inthestudio_con {
+    width: 472px;
+    height: 340px;
+    position: absolute;
+    top: 210px;
+    right: 0;
+}
+
+
+
+
+
+#section01 .ph_img .photo_img03_3_berlin01  {
+    width: 600px;
+    height: 800px;
+    position: relative;
+}
+#section01 .ph_img  .photo_img03_3_berlin01_con {
+    width: 384px;
+    height: 307px;
+    position: absolute;
+    top: 258px;
+    right: 30px;
+}
+
+
+
+
+#section01 .ph_img .photo_img04_2_album{
+    width: 600px;
+    height: 800px;
+    position: relative;
+}
+
+#section01 .ph_img .photo_img04_2_album_con {
+    width: 312px;
+    height: 398px;
+    position: absolute;
+    top: 210px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#section01 .ph_img .ph_img01_1_berlin02 {
+    width: 314px;
+    height: 392px;
+    position: relative;
+!*    top: 216px;
+    left: 87px;*!
+    transition: all 1s;
+}
+
+ .ph_img .ph_img01_1_berlin02.on01{
+    transform: translateX(200px);
+    transition: all 1s;
+     opacity: 1;
+}
+
+
+
+
+
+#section01 .ph_img .ph_img01_2_berlin02  {
+    width: 376px;
+    height: 447px;
+    position: relative;
+!*    right: 44px;
+    top: 172px;*!
+    transition: all 1s;
+
+}
+
+#section01 .ph_img .ph_img01_2_berlin02.on02{
+    transform: translateX(-100px);
+    transition: all 1s;
+    opacity: 1;
+}
+
+
+
+
+
+
+#section01 .ph_img .ph_img01_3_berlin02 {
+    width: 670px;
+    height: 521px;
+    position: relative;
+    transition: all 1s;
+
+!*    top: 107px;
+    left: 299px;
+    background-color: gray;*!
+}
+
+#section01 .ph_img .ph_img01_3_berlin02.on03{
+    transition: all 1s;
+    opacity: 1;
+    transform: translateX(200px);
+
+    !*transform: translateY(-100px);*!
+}
+
+
+
+
+
+
+
+#section01 .ph_img .photo_img02_1_inthestudio{
+    width: 495px;
+    height: 356px;
+    position: relative;
+!*    bottom: 10px;
+    left: 0;*!
+    transition: all 1s;
+}
+
+#section01 .ph_img .photo_img02_1_inthestudio.on04{
+    transition: all 1s;
+    opacity: 1;
+    transform: translateX(200px);
+    !*transform: translateY(-100px);*!
+}
+
+
+#section01 .ph_img .photo_img02_2_inthestudio {
+    width: 472px;
+    height: 340px;
+    position: relative;
+!*    top: 28%;
+    right: -70px;*!
+    !*transform: translateY(-44%);*!
+    transition:all 1s;
+}
+
+#section01 .ph_img .photo_img02_2_inthestudio.on05{
+    transition: all 1s;
+    opacity: 1;
+    transform: translateX(200px);
+    !*transform: translateY(-100px);*!
+}
+
+
+#section01 .ph_img .photo_img02_3_inthestudio {
+    width: 395px;
+    height: 570px;
+    position: relative;
+!*    top: 100px;
+    left: 34%;*!
+    transition: all 1s;
+}
+
+#section01 .ph_img .photo_img02_3_inthestudio.on05{
+    transition: all 1s;
+    opacity: 1;
+    transform: translateX(200px);
+    !*transform: translateY(-100px);*!
+}
+
+
+
+
+
+
+
+
+
+!*#section01 .ph_img .ph_img03_berlin01{
+    position: absolute;
+    !*    top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);*!
+    width: 1169px;
+    height: 521px;
+    top: 60px;
+    left: 0;
+    transition: all 1s;
+    opacity: 0;
+}*!
+
+#section01 .ph_img  .photo_img03_1_berlin01 {
+    width: 479px;
+    height: 351px;
+    position: relative;
+!*    top: 108px;
+    left: 0;*!
+}
+
+#section01 .ph_img  .photo_img03_2_berlin01 {
+    width: 433px;
+    height: 581px;
+    position: relative;
+!*    left: 388px;
+    top: -40px;*!
+}
+
+#section01 .ph_img  .photo_img03_3_berlin01 {
+    width: 384px;
+    height: 307px;
+    position: relative;
+!*    top: 100px;
+    right: 0;*!
+}
+
+
+
+
+
+
+
+!*#section01 .ph_img .ph_img04_album{
+    position: absolute;
+    !*    top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);*!
+    width: 1169px;
+    height: 521px;
+    top: 60px;
+    left: 0;
+    transition: all 1s;
+    opacity: 0;
+}*!
+
+#section01 .ph_img .photo_img04_1_album {
+    width: 380px;
+    height: 420px;
+    position: relative;
+!*    top: 108px;
+    left: -10px;*!
+}
+
+#section01 .ph_img .photo_img04_3_album {
+    width: 631px;
+    height: 498px;
+    position: relative;
+!*    left: 280px;
+    top: 0;*!
+}
+
+#section01 .ph_img .photo_img04_2_album {
+    width: 312px;
+    height: 398px;
+    position: relative;
+!*    top: 100px;
+    right: 0;*!
+}*/
+
+
+
+
+#section01 .ph_f_title {
+    width: 535px;
+    height: 96px;
+    position: relative;
+    margin-top: 845px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+
+#section01 .ph_f_title .ph_f_title_berlin02 {
+    position: absolute;
+    top: 32%;
+/*    left: 50%;
+    transform: translateX(-50%);*/
+    width: 479px;
+    height: 44px;
+
+}
+
+#section01 .ph_f_title .ph_f_title_berlin01 {
+    position: absolute;
+    top: 32%;
+/*    left: 50%;
+    transform: translateX(-50%);*/
+    width: 476px;
+    height: 44px;
+}
+
+#section01 .ph_f_title .ph_f_title_inthestudio {
+    position: absolute;
+    top: 32%;
+/*    left: 50%;
+    transform: translateX(-50%);*/
+    width: 536px;
+    height: 44px;
+}
+
+#section01 .ph_f_title .ph_f_title_album {
+    position: absolute;
+    top: 32%;
+/*    left: 50%;
+    transform: translateX(-50%);*/
+    width: 535px;
+    height: 44px;
+}
+
+
+
+
+
+#section01 .ph_btn_arrow {
+    position: absolute;
+    height: 42px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 33%);
+    z-index: 1000;
+}
+
+#section01 .ph_btn_arrow .ph_btn_prev {
+    position: absolute;
+    height: 22px;
+    width: 135px;
+    top: 0;
+    left: 8%;
+    padding: 10px;
+}
+
+#section01 .ph_btn_arrow .ph_btn_next {
+    position: absolute;
+    height: 22px;
+    width: 135px;
+    top: 0;
+    right: 8%;
+    padding: 10px;
+}
+
+
+
