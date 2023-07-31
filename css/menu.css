@@ -120,6 +120,7 @@
     position: absolute;
     top: 0;
     left: 10px;
+    opacity: 1;
 }
 
 #menu .menu_f .menu_f_mid {
@@ -156,6 +157,7 @@
     left: 0;
     top: 85px;
     padding: 10px;
+    opacity: 1;
 }
 
 #menu .menu_f .menu_f_mid .menu_f_photo {
